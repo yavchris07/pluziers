@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+    overflow-x: hidden;
+}
+
+:root{
+    --kprimary:#b25A06;
+    --kwhite:#fff;
+    --kblak:#000;
+    --kgrey: grey;
+    --kgray: gray;
+    --kbg:#efefef;
+}
+
+body{
+    background: var(--kprimary);
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    background: var(--kprimary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.logo{
+  font-size: 30px;
+  margin-left: 150px;
+  justify-content: center;
+  margin-top: 15px;
+  display: flex;
+}
+
+.nav .logo img{
+  width: 140px;
+  height: 140px;
+}
+
+/* on line uderline 
+.under{
+  border: 1.5px solid black;
+  width: 100px;
+  margin-bottom: 15px;
+} */
+
+/* ================= */
+.list{
+    display: flex;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.list ul{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.list ul li{
+    margin:20px;
+    font-size: 17px;
+    color: var(--kblak);
+}
+
+.list ul li a{
+  text-decoration: none;
+  color:var(--kblak);
+  align-items: center;
+  padding-bottom: 10px;
+
+}
+
+.list ul li a:hover{
+  text-decoration: none;
+  color: var(--kwhite);
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+/* =============================================== */
+
+/* partie au top de la collection */
+.con{ 
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--kprimary);
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 110px;
+}
+
+.con#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.con-img{
+    width:100% ;
+    height: 500px;
+}
+
+.left-box{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.right-box{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.left-box img{
+    width: 100%;
+}
+
+.right-box{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+}
+.rigth-box-titre{
+    margin-bottom: 20px;
+}
+
+
+/* =========================== */
+
+/* partie top magazine*/
+.title{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-bottom: 90px;
+}
+
+.list-mag{
+    background: transparent;
+    width: 80%;
+    display: flex;
+}
+
+.mag{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: var(--kblak);
+    margin: 10px;
+    color: var(--kwhite);
+}
+/* ========================== */
+
+
+/* partie de style commun */
+.call-to-action-container .more button{
+    border: 2px solid var(--kblak);
+    background: transparent;
+    font-size: 15px;
+    border-radius: 60px;
+    outline: 0;
+    padding: 9px 35px;
+    font-size: 18px;
+}
+
+/* .call-to-action-container .more:hover{
+    color: var(--kprimary);
+    cursor: pointer;
+} */
+.call-to-action-container .more button:hover{
+    color: var(--kprimary);
+    cursor: pointer;
+    background: var(--kblak);
+}
+
+/* .call-to-action-container .more{
+    text-decoration: none;
+    color: var(--kblak);
+} */
+
+.block-auto{
+    /* margin: auto; */
+    position: relative;
+    margin: 3em auto;
+}
+
+.call-to-action-container{
+    position: relative;
+    margin: 0.5em auto;
+    text-align: center;
+    background: transparent;
+}
+
+.title{
+    width: 60%;
+    text-align: center;
+}
+
+.button{
+    border: 2px solid var(--kblak);
+    background: transparent;
+    font-size: 15px;
+    border-radius: 40px;
+    outline: 0;
+    padding: 9px 35px;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+.button a{
+    text-decoration: none;
+    color: var(--kblak);
+}
+.button:hover{
+    cursor: pointer;
+    background: var(--kblak);
+    color: var(--kprimary);
+}
+
+.button a:hover{
+    color: var(--kprimary);
+}
+
+.about-container .buttons{
+    border: 2px solid var(--kprimary);
+    background: transparent;
+    font-size: 15px;
+    border-radius: 40px;
+    outline: 0;
+    padding: 9px 35px;
+    margin-top: 20px;
+    margin-left: 20%;
+    color: var(--kblak);
+}
+.about-container p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/* ========================== */
+
+
+
+
+/* .right-box button{
+    border: none;
+    background: red;
+    border-radius: 25px;
+} */
+
+
+/* Partie  */
+
+/* .c2{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* partie suscription */
+.subscription-container{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--kblak);
+    width: 70%;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    padding: 5em;
+}
+
+.subscription-container h1{
+    font-size: 30px;
+    color: var(--kprimary);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.subscription-container p{
+    font-size: 18px;
+    color: var(--kwhite);
+    margin: 1.2em;
+}
+/* ==================== */
+
+/* partie fidba graphics books  */
+.books-container{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--kbg);
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+.books-container h1{
+    font-size: 30px;
+    color: var(--kprimary);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.books-container h3{
+    font-size: 20px;
+    color: var(--kblak);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.books-container p{
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    color: var(--kwhite);
+}
+
+.books-container button{
+    border: 2px solid var(--kprimary);
+    background: transparent;
+    font-size: 15px;
+    border-radius: 40px;
+    outline: 0;
+    padding: 9px 35px;
+    margin-top: 20px;
+    color: var(--kwhite);
+}
+
+
+.books-container .slide-content{
+    margin: 0 10px;
+    /* background: yellow; */
+    /* padding: 20px; */
+}
+
+.books-container .cards{
+    border: 5px solid var(--kprimary);
+    /* background-color: blue; */
+    width: 150px;
+    margin: 10px;
+}
+
+.books-container .slide-container{
+    /* max-width: 1120px; */
+    width: 90%;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+.books-container .buttons{
+    color: var(--kblak);
+}
+
+.books-container .buttons:hover{
+    color: var(--kblak);
+    cursor: pointer;
+}
+
+/* slide part */
+/* .xd{
+    color: var(--kwhite);
+    font-size: 10px;
+} */
+/* ============================== */
+
+
+/* partie about */
+.about-container{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--kblak);
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+.about-container h1{
+    font-size: 30px;
+    color: var(--kprimary);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.about-container p{
+    letter-spacing: normal;
+    font-size: 14px;
+    color: var(--kwhite);
+    font-weight: 200;
+    text-align: justify;
+}
+
+.about-container button{
+    border: 2px solid var(--kprimary);
+    background: transparent;
+    font-size: 15px;
+    border-radius: 40px;
+    outline: 0;
+    padding: 9px 35px;
+    margin-top: 20px;
+    color: var(--kwhite);
+}
+
+.about-container button a{
+    text-decoration: none;
+    color: var(--kwhite);
+}
+
+
+/* pop up  */
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: 0.5s;
+}
+/* ================== */
+/* footer */
+.foot-container{
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--kblak);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+.foot-container .foot-middle{
+    background: transparent;
+    color: var(--kwhite);
+    display: block;
+    text-align: justify;
+    /* opacity: .2; */
+}
+
+.foot-container .foot-middle h4{
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.foot-container .foot-middle p{
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.foot-logo{
+    color: #b25A06; 
+    font-size: 20px;
+}
+.foot-logo p{
+    font-size: 13px;
+    margin: 5px;
+}
+
+.foot-logo .droit{
+    margin-top: 50px;
+}
+/* ==================== */
+
+/* more mags */
+.list-mags{
+    position: relative;
+    align-items: center;
+    background: var(--kprimary);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 60px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color: var(--kwhite);
+    padding: 10px;
+    justify-content: center;
+}
+
+.list-mags .mag a{
+    text-decoration: none;
+    color: var(--kwhite);
+}
+
+
+
+/* 
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+*/
+
+/* one mag */
+
+.photo{
+    width: 50%;
+    margin: auto;
+}
+
+.photo img{
+    width: 100%;
+}
+/* ========= */

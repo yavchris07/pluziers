@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+    overflow-x: hidden; /*for heddin the  */
+  }
+  
+  :root{
+    --kprimary:#b25A06;
+    --kwhite:#fff;
+    --kblak:#000;
+    --kgrey: grey;
+    --kgray: gray;
+    --kbg:#efefef;
+  }
+  
+  body{
+    background: var(--kbg);
+  }
+   
+.nav{
+  position: fixed;
+    width: 100%;
+    height: 60px;
+    background: var(--kbg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid var(--kprimary);
+    padding: 10px 30%;
+}
+/* 
+.logo{
+    font-size: 30px;
+    margin-left: 150px;
+    justify-content: center;
+    margin-top: 15px;
+} */
+  
+/* .nav .logo img{
+    width: 140px;
+    height: 140px;
+} */
+  
+  /* on line uderline  */
+  .under{
+    border: 1px solid black;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  /* ================= */
+.list{
+    display: flex;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+  
+.list ul{
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+  
+  .list ul li{
+      margin:10px;
+      font-size: 17px;
+      overflow: hidden;
+      /* color: var(--kprimary); */
+  }
+  
+  .list ul li a{
+    text-decoration: none;
+    color:var(--kprimary);
+    align-items: center;
+    padding-bottom: 10px;
+  
+  }
+  
+  .list ul li a:hover{
+    text-decoration: none;
+    color: var(--kblak);
+    font-size: 18px;
+    transition: 0.5s;
+  }
+
+.all-title{
+    margin-left: 20%;
+    margin-top: 70px;
+}
+
+
+/* apropos */
+.contents{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+.contents .log{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+    background: transparent;
+}
+
+.contents .log img{
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  margin: auto;
+}
+   
+.contents img{
+    width: 300px;
+    height: 300px;
+    padding: 0 4em;
+}
+  
+.contents p{
+    font-size:18px;
+    font-weight: 300px;
+    text-align:justify;
+    margin-bottom: 20px;
+}
+  
+.contents h3,h4{
+    margin: 20px;
+}
+  
+.contents h2{
+    margin: 20px;
+    color: var(--kgray);
+}
+.contents hr{
+    border: 1px solid black;
+    margin-top: 15px;
+}
+  
+
+/* footer */
+.foot-container{
+    position: relative;
+    background: var(--kbg);
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    padding: 30px;
+    color: var(--kblak);
+    justify-content: space-around;
+}
+  
+.foot-container .foot-logo{
+    color: var(--kblak);
+    font-size: 24px;
+}
+
+.foot-container .adresse{
+    width: 200px;
+    margin-right: 20px;
+    color: var(--kprimary);
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+@media(max-width: 520px){
+  .nav{
+    padding: 12px 20%;
+     
+      object-fit: cover;
+
+  }
+}
+@media(max-width: 500px){
+  .nav{
+    padding: 12px 20%;
+  }
+}
+@media(max-width: 480px){
+  .nav{
+    padding: 12px 20%;
+  }
+}
+@media(max-width: 460px){
+  .nav{
+    padding: 12px 20%;
+  }
+}
+@media(max-width: 440px){
+  .nav{
+    padding: 12px 20%;
+  }
+}
+@media(max-width: 420px){
+  .nav{
+    padding: 12px 20%;
+  }
+}
+@media(max-width: 400px){
+  .nav{
+    padding: 12px 20%;
+  }
+}
+@media(max-width: 380px){
+  .nav{
+    padding: 12px 20%;
+  }
+}
