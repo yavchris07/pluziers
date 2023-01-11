@@ -28,29 +28,22 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     overflow: hidden;
 }
 
 .logo{
-  font-size: 30px;
+  /* font-size: 30px;
   margin-left: 150px;
-  justify-content: center;
+  justify-content: center; */
   margin-top: 15px;
-  display: flex;
+  /* display: flex; */
 }
 
 .nav .logo img{
   width: 140px;
   height: 140px;
 }
-
-/* on line uderline 
-.under{
-  border: 1.5px solid black;
-  width: 100px;
-  margin-bottom: 15px;
-} */
 
 /* ================= */
 .list{
@@ -72,6 +65,7 @@ body{
     margin:20px;
     font-size: 17px;
     color: var(--kblak);
+    overflow: hidden;
 }
 
 .list ul li a{
@@ -85,7 +79,8 @@ body{
 .list ul li a:hover{
   text-decoration: none;
   color: var(--kprimary);
-  font-size: 18px;
+  /* font-size: 18px; */
+  border-bottom: 2px solid red;
   transition: 0.5s;
 }
 /* =============================================== */
@@ -95,6 +90,7 @@ body{
 }
 
 .title h1,h3{
+    margin-left: 47px;
     margin-bottom: 10px;
 }
 
@@ -184,6 +180,10 @@ body{
 .all-title h5{
     font-weight: 400;
 }
+
+/* .all-title h4,h5{
+    margin-left: 47px;
+} */
 
 .all-title-section a{
     text-decoration: none;

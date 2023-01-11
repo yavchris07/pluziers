@@ -1,117 +1,90 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'roboto';
+    font-family: 'lato';
 }
 
 :root{
-    --kprimary:orange;
+    --kprimary:#b25A06;
     --kwhite:#fff;
     --kblak:#000;
     --kgrey: grey;
     --kgray: gray;
     --kbg:#efefef;
-    background: var(--kwhite);
 }
 /* ================= */
-
+body{
+  background: var(--kwhite);
+  /* overflow: hidden; */
+}
 /* Partie nav bar */
-.nav{
-    width: 100%;
-    height: 60px;
-    background: var(--kblak);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* position: fixed; */
-    margin-top: 0;
-
+nav{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  /* right: 0; */
+  background: var(--kblak);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  z-index: 1000;
+  border-bottom: 1px solid var(--kprimary);
+}
+.nav .logo img{
+  width: 140px;
+  height: 140px;
+}
+.list{
+  margin-right: 8%;
 }
 .logo{
-  font-size: 30px;
-  margin-left: 150px;
-  justify-content: center;
-  margin-top: 15px;
-  display: flex;
+  margin-left: 8%;
 }
-
-.nav .logo img{
-    width: 140px;
-    height: 140px;
-}
-
-.list{
-    display: flex;
-    text-decoration: none;
-    font-size: 17px;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
 .list ul{
-    display: flex;
-    list-style: none;
-    padding: 20px;
-    justify-content: center;
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  justify-content: center;
+  
 }
-
 .list ul li{
-    margin:20px;
-    font-size: 17px;
-    color: #fff;
+  margin:0 10px;
+  font-size: 17px;
+  color: #fff;
 }
 
 .list ul li a{
-  text-decoration: none;
-  color:#fff;
-  align-items: center;
-  padding-bottom: 10px;
-
+text-decoration: none;
+color:#fff;
+align-items: center;
+padding-bottom: 10px;
+transition: all .45s ease
 }
-
 .list ul li a:hover{
   text-decoration: none;
-  color: rgba(235, 149, 50, 0.5);
-  font-size: 18px;
-  transition: 0.5s;
-}
+  border-bottom: 2px solid var(--kwhite);
+} 
 /* ======================================= */
 
 /* partie titre */
 .all-title{
-    margin-left: 20%;
-    margin-top: 40px;
+  margin-top: 100px;
+  align-content: center;
 }
 
 .all-title h5{
-    margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .all-title h2{
-    margin-bottom: 3px; 
-    font-size: 30px;
-    font-weight: 200;
+  margin-bottom: 3px; 
+  font-size: 30px;
+  font-weight: 200;
+  margin-left: 40%;
+  margin-right: auto;
 }
-
-
-.more{
-    border: 3px solid black;
-    width: 30em;
-    margin-bottom: 15px;
-}
-
-.more-out{
-    border: 3px solid black;
-    width: 18em;
-    margin-bottom: 15px; 
-}
-
-.more-int{
-    border: 3px solid black;
-    width: 15em;
-    margin-bottom: 15px; 
-}
-/* ============================ */
 
 /* Fenetre */
 .list-container{
@@ -127,56 +100,7 @@
     color: var(--kwhite);
     padding: 10px;
     justify-content: center;
-}
-
-/* .list-container .card{
-  background: var(--kwhite); 
-  width: 240px;
-  height: 260px;
-  margin: 7px;
-  overflow-y: hidden;
-}
-
-.card-picture{
-  height: 60%;
-  background: var(--kblak);
-}
-
-.card-picture .photo{
-  width: 100%;
-  height: 100%;
-}
-
-.card-titles{
-  display: block;
-  margin: 0.1em;
-}
-
- 
-
-.card-titles .element0 p{
-  margin-top: 12px;
-  color: var(--kblak);
-  margin-bottom: 10px;
-}
-
- 
-.sub-element .element1{
-  display: flex;
-  justify-content: space-between;
-  color: var(--kgray);
-  font-weight: 400;
-}
-
-.business-card:hover{
-  /* background: rgba(235, 149, 50, 0.5);
-  transform: scale(1.1);
-  cursor: pointer;
-  overflow: hidden;
-  transition: 1s ease;
-} */
-
- 
+} 
 /* ======================================= */
 
 /* ======= business ============= */
@@ -193,7 +117,13 @@
   .card-picture{
     height: 60%;
     background: var(--kblak);
+    overflow-x: hidden;
     overflow-y: hidden;
+  }
+  .card-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
   .card-titles{
@@ -275,7 +205,58 @@
 .foot-container-icons {
   color: var(--kprimary);
 }
+@media(max-width: 610px){
+   
+  .list-container .card{
+    width: 80%;
+    height:320px;
+  }
+  .foot-container .icons{
+    position: absolute;
+    /* background: red; */
+    bottom: 45px;
+    right: 45px;
+  }
+}
 
+@media(max-width: 510px){
+  .nav{
+    /* padding: 5px 15px; */
+    background: black;
+    height: 120px;
+  }
+  .nav .logo{
+    margin-left: 30%;
+  }
+  .all-title{
+    /* margin-top: 160px; */
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .all-title h2{
+    font-size: 20px;
+    margin-left:35%;
+    margin-top: 170px;
+  }
+  .list{
+    position: absolute;
+    margin-top: 15%;
+    left: 0;
+    /* color: red; */
+    margin-left: 12%;
+  }
+  .foot-container .icons{
+    position: absolute;
+    /* background: red; */
+    bottom: 45px;
+    right: 45px;
+  }
+  .list-container .card{
+    width: 340px;
+    height:320px;
+  }
+}
 
 
 
