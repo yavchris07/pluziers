@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'roboto';
+    font-family: 'lato';
     overflow-x: hidden;
 }
 
@@ -25,7 +25,9 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
+    overflow: hidden;
+    border-bottom: 1px solid var(--kblak);
 }
 
 .logo{
@@ -68,6 +70,7 @@ body{
     margin:20px;
     font-size: 17px;
     color: var(--kblak);
+    overflow: hidden;
 }
 
 .list ul li a{
@@ -107,6 +110,7 @@ body{
 .con-img{
     width:100% ;
     height: 500px;
+    object-fit: cover;
 }
 
 .left-box{
@@ -129,8 +133,10 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 0;
+    text-align: justify;
 }
 .rigth-box-titre{
+     
     margin-bottom: 20px;
 }
 
@@ -154,11 +160,66 @@ body{
 
 .mag{
     position: relative;
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 320px;
     background: var(--kblak);
     margin: 10px;
     color: var(--kwhite);
+    border-radius: 8px;
+}
+.mag img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.mag .detail{
+    width: 100%;
+    height: 0;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    background: linear-gradient(rgb(0,0,0,0.1),var(--kblak));
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20 20px;
+    transition: height 0.5s;
+    flex-direction: column;
+}
+.mag .detail h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.mag .detail p{
+    font-size: 1rem;
+    initial-letter: 1.8;
+    overflow: hidden;
+}
+.mag .detail i{
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--kprimary);
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.mag .detail a{
+    overflow: hidden;
+}
+.mag:hover img{
+    transform: scaleX(1.1);
+}
+.mag:hover .detail{
+    height: 100%;
 }
 /* ========================== */
 
@@ -423,7 +484,7 @@ body{
 
 
 /* pop up  */
-#popup{
+/* #popup{
     position: fixed;
     top: 40%;
     left: 50%;
@@ -432,10 +493,11 @@ body{
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
     background: #fff;
-    /* visibility: hidden; */
+    /* visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-}
+} */
+
 /* ================== */
 /* footer */
 .foot-container{

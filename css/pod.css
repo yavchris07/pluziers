@@ -15,6 +15,10 @@
     --kbg:#efefef;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--kbg);
     
@@ -90,15 +94,16 @@ body{
 }
 
 .title h1,h3{
-    margin-left: 47px;
+    margin-left: 65px;
     margin-bottom: 10px;
 }
 
 .online-section{
-    width: 100%;
+    width: 90%;
     background: transparent;
     padding: 3px 60px;
     display: flex;
+    margin: auto;
 }
 
 .card-up{
